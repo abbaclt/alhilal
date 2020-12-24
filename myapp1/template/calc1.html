@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="yellow">
+<h1><center></center><font color=green></font>My Calculator</center>
+</h1><hr color=red>
+
+<form action="calc3" method="POST">
+{% csrf_token%}
+<label>Enter First Numbers&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text" name="n1" value="{{request.POST.n1}}"><br>
+
+<label>Enter Second Number&nbsp&nbsp&nbsp</label><input type="text" name="n2" value="{{request.POST.n2}}"><br>
+<label>Result&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" value="{{sum}}"" name="n">
+#<div class="btn-group">
+
+</div><br><center><button>SUM</button></center>
+<br></label><button>SUB</button></center>
+<br><center><button>MUL</button></center>
+<br><center><button>DIV</button></center>
+<br><center><button>STOP</button></center></div>
+</form>
+</form>
+</body>
+</html>
